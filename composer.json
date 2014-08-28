@@ -1,0 +1,14 @@
+{
+	"name":"Intercom PHP",
+	"type":"library",
+	"description": "Intercom PHP is library to connect Intercom APi",
+	"license":"MIT",
+    "require": {
+		"php": ">=5.4.0",
+		"guzzlehttp/guzzle": "dev-master"
+   }
+  
+}
+
+
+ 
