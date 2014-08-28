@@ -10,7 +10,8 @@
 		"psr-0": {
 			"IntercomPhp": "src/"
 		}
-	}
+	},
+	"minimum-stability": "dev"
 
 }
 
