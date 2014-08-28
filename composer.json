@@ -1,17 +1,17 @@
 {
-	"name":"sitemavens/intercom-php",
+	"name": "sitemavens/intercom-php",
 	"description": "Intercom PHP is library to connect Intercom APi",
-	"license":"MIT",
-    "require": {
+	"license": "MIT",
+	"require": {
 		"php": ">=5.4.0",
 		"guzzlehttp/guzzle": "4.2.*"
-   },
-   "autoload": {
-        "psr-4": {
-            "IntercomPhp\\": "src/"
-        }
-    }
-  
+	},
+	"autoload": {
+		"psr-4": {
+			"IntercomPhp\\": "src/"
+		}
+	}
+
 }
 
 
