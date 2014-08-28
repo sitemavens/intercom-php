@@ -2,7 +2,7 @@
 
 namespace IntercomPhp;
 
-class Users{
+class Users extends Base{
 	
 	public function addUser(){
 		
