@@ -10,6 +10,11 @@ class User {
 	private $createdAt;
 	private $remoteCreatedAt;
 	private $newSession = false;
+	private $location = null;
+	
+	public function __construct () {
+		$this->location = new \IntercomPhp\Domain\Location();
+	}
 	
 	public function getId () {
 		return $this->id;
@@ -59,6 +64,21 @@ class User {
 	public function setNewSession ( $newSession ) {
 		$this->newSession = $newSession;
 	}
+	
+	/**
+	 * 
+	 * @return \IntercomPhp\Domain\Location
+	 */
+	public function getLocation () {
+		return $this->location;
+	}
 
+	/**
+	 * 
+	 * @param \IntercomPhp\Domain\Location $location
+	 */
+	public function setLocation ( \IntercomPhp\Domain\Location $location ) {
+		$this->location = $location;
+	}
 
 }
