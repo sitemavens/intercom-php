@@ -19,7 +19,8 @@ class Users extends Base {
 			"user_id" => $user->getId(),
 			"created_at" => $user->getCreatedAt(),
 			"last_seen_ip" => $this->getRequestIp(),
-			"new_session" => $user->isNewSession()
+			"new_session" => $user->isNewSession(),
+			'last_request_at' => time()
 		];
 
 		$this->getClient()->post( '/users', ['json' => $data] );
