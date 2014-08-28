@@ -30,11 +30,7 @@ $user->setRemoteCreatedAt( time() );
 
 // You should set this prop to "true" if you are tracking when a user logs in
 $user->setNewSession(true);
-
-// User Location information
-$user->getLocation()->setCity( "Neuquen" );
-$user->getLocation()->setCountryCode("AR");
-$user->getLocation()->setPostalCode( "8300");
+ 
 		
 $users = new \IntercomPhp\Users();
 $result = $users->addUser( $user );
