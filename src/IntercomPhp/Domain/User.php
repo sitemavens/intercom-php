@@ -7,6 +7,9 @@ class User {
 	private $id;
 	private $email;
 	private $name;
+	private $createdAt;
+	private $remoteCreatedAt;
+	private $newSession = false;
 	
 	public function getId () {
 		return $this->id;
@@ -32,10 +35,30 @@ class User {
 		$this->name = $name;
 	}
 
-
-	public function toArray(){
-		 $array = (array) $this;
-		 
-		 return $array;
+	public function getCreatedAt () {
+		return $this->createdAt;
 	}
+
+	public function setCreatedAt ( $createdAt ) {
+		$this->createdAt = $createdAt;
+	}
+
+	
+	public function getRemoteCreatedAt () {
+		return $this->remoteCreatedAt;
+	}
+
+	public function setRemoteCreatedAt ( $remoteCreatedAt ) {
+		$this->remoteCreatedAt = $remoteCreatedAt;
+	}
+	 
+	public function isNewSession () {
+		return $this->newSession;
+	}
+
+	public function setNewSession ( $newSession ) {
+		$this->newSession = $newSession;
+	}
+
+
 }
