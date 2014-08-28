@@ -15,3 +15,22 @@ The recommended way to install the library is through
     }
 }
 ```
+
+### How you use it
+
+
+```php
+\IntercomPhp\Config::init( 'your_app_id', 'your_api_key' );
+
+$user = new \IntercomPhp\Domain\User();
+$user->setName( 'Pepe Florez' );
+$user->setEmail( 'pepe@florez.com' );
+$user->setId( 1234 );
+$user->setRemoteCreatedAt( time() );
+$user->getLocation()->setCity( "Neuquen" );
+$user->getLocation()->setCountryCode("AR");
+$user->getLocation()->setPostalCode( "8300");
+		
+$users = new \IntercomPhp\Users();
+$result = $users->addUser( $user );
+```
